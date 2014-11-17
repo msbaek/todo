@@ -30,14 +30,15 @@ public class TodoControllerIntegrationTest {
     @Test
     public void createTodo() {
         given().
-                param("description", "description01").
-                param("startDate", "2014-12-01").
+                param("name", "name01").
+                param("dueDate", "2014-12-01").
         when().
                 post("/todo").
         then().
                 statusCode(HttpStatus.SC_OK)
-                .body("id", nullValue())
-                .body("description", equalTo("description01"))
+                .body("id", equalTo("1"))
+                .body("name", equalTo("name01"))
+                .body("dueDate", equalTo("2014-12-01"))
         ;
     }
 }
