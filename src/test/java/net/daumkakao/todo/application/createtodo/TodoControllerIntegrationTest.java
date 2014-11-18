@@ -1,4 +1,4 @@
-package net.daumkakao.todo.web;
+package net.daumkakao.todo.application.createtodo;
 
 import com.jayway.restassured.RestAssured;
 import net.daumkakao.todo.Application;

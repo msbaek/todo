@@ -1,4 +1,4 @@
-package net.daumkakao.todo.interactor;
+package net.daumkakao.todo.application.createtodo;
 
 import net.daumkakao.shared.requestor.UseCaseRequest;
 

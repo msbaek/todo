@@ -1,10 +1,7 @@
-package net.daumkakao.todo.controllers;
+package net.daumkakao.todo.application.createtodo;
 
 import net.daumkakao.shared.requestor.UseCase;
 import net.daumkakao.shared.responders.UsecaseResponder;
-import net.daumkakao.todo.interactor.CreateTodoRequest;
-import net.daumkakao.todo.interactor.CreateTodoResponse;
-import net.daumkakao.todo.views.CreateTodoViewModel;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
