@@ -20,9 +20,7 @@ public class CreateTodoUsecase implements UseCase<CreateTodoRequest, CreateTodoR
         Todo todo = new Todo(request.name, LocalDate.parse(request.dueDate, fmt));
         todoRepository.save(todo);
         CreateTodoResponse response = new CreateTodoResponse();
-        response.id = todo.getId();
-        response.name = todo.getName();
-        response.dueDate = todo.getDueDate();
+        response.todo = todo;
         return response;
     }
 }

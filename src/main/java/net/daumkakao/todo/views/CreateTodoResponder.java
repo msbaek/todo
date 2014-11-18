@@ -11,9 +11,9 @@ public class CreateTodoResponder implements UsecaseResponder<CreateTodoResponse,
     @Override
     public CreateTodoViewModel present(CreateTodoResponse response) {
         CreateTodoViewModel model = new CreateTodoViewModel();
-        model.id = response.id.toString();
-        model.name = response.name;
-        model.dueDate = response.dueDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        model.id = response.todo.getId().toString();
+        model.name = response.todo.getName();
+        model.dueDate = response.todo.getDueDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
         return model;
     }
 }

@@ -1,10 +1,9 @@
 package net.daumkakao.todo.controllers;
 
-import net.daumkakao.shared.responders.UseCaseResponse;
+import net.daumkakao.shared.requestor.UseCase;
+import net.daumkakao.shared.responders.UsecaseResponder;
 import net.daumkakao.todo.interactor.CreateTodoRequest;
 import net.daumkakao.todo.interactor.CreateTodoResponse;
-import net.daumkakao.todo.interactor.CreateTodoUsecase;
-import net.daumkakao.todo.views.CreateTodoResponder;
 import net.daumkakao.todo.views.CreateTodoViewModel;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,10 +16,10 @@ import javax.annotation.Resource;
 @Controller
 public class TodoController {
     @Resource(name = "createTodoUsecase")
-    private CreateTodoUsecase usecase;
+    private UseCase<CreateTodoRequest, CreateTodoResponse> usecase;
 
     @Resource(name = "createTodoResponder")
-    private CreateTodoResponder usecaseResponder;
+    private UsecaseResponder<CreateTodoResponse, CreateTodoViewModel> usecaseResponder;
 
     @RequestMapping(value = "/todo", method = RequestMethod.POST)
     public @ResponseBody CreateTodoViewModel createTodo(
