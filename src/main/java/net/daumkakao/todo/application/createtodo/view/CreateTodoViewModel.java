@@ -1,4 +1,4 @@
-package net.daumkakao.todo.application.createtodo;
+package net.daumkakao.todo.application.createtodo.view;
 
 public class CreateTodoViewModel {
     public String id;

@@ -1,6 +1,7 @@
-package net.daumkakao.todo.application.createtodo;
+package net.daumkakao.todo.application.createtodo.view;
 
 import net.daumkakao.shared.responders.UsecaseResponder;
+import net.daumkakao.todo.application.createtodo.usecase.CreateTodoResponse;
 import org.springframework.stereotype.Component;
 
 import java.time.format.DateTimeFormatter;

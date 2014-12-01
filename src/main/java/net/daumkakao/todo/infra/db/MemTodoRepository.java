@@ -11,7 +11,7 @@ import java.util.concurrent.atomic.AtomicLong;
 @Repository("todoRepository")
 public class MemTodoRepository implements TodoRepository {
     private final AtomicLong counter = new AtomicLong();
-    private List<Todo> todos = new ArrayList<>();
+    private List<Todo> todos = new ArrayList<Todo>();
 
     @Override
     public void save(Todo todo) {

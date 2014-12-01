@@ -1,9 +1,7 @@
-package net.daumkakao.todo.application.createtodo;
+package net.daumkakao.todo.application.createtodo.usecase;
 
 import net.daumkakao.shared.responders.UseCaseResponse;
 import net.daumkakao.todo.domain.Todo;
-
-import java.time.LocalDate;
 
 public class CreateTodoResponse implements UseCaseResponse {
     public Todo todo;

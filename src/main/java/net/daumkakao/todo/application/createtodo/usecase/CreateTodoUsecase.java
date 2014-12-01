@@ -1,4 +1,4 @@
-package net.daumkakao.todo.application.createtodo;
+package net.daumkakao.todo.application.createtodo.usecase;
 
 import net.daumkakao.shared.requestor.UseCase;
 import net.daumkakao.todo.domain.Todo;
