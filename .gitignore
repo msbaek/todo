@@ -5,3 +5,6 @@ build.gradle
 .gradle
 *.ipr
 *.iws
+gradle
+gradlew
+gradlew.bat
